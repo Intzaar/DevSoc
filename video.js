@@ -15,7 +15,7 @@ video.addEventListener("loadedmetadata", () => {
       end: `${scrollDuration}vh`,
       scrub: 2,
       pin: true,
-      markers: false,
+      markers: true,
     },
     currentTime: videoDuration,
   });
