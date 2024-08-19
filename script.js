@@ -28,9 +28,7 @@ function deleteText() {
   }
 }
 
-
 currentText = originalText;
-
 
 var tl = gsap.timeline();
 
@@ -56,11 +54,9 @@ tl.from("#name", {
   y: 50,
   duration: 0.7,
   stagger: 0.2,
-
 })
 .to(".text", {
   opacity: 1,
   duration: 0.8,
-  oncComplete:typeText()
-
+  onComplete: typeText
 });
